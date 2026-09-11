@@ -67,7 +67,12 @@ static void	push_back_to_a(t_stack *a, t_stack *b, t_runtime *rt)
 	}
 }
 
-static void	push_chunk_to_b(t_stack *a, t_stack *b, t_chunk *ch, t_runtime *rt)
+static void	push_chunk_to_b(
+	t_stack *a,
+	t_stack *b,
+	t_chunk *ch,
+	t_runtime *rt
+)
 {
 	int	pushed;
 
@@ -84,7 +89,7 @@ static void	push_chunk_to_b(t_stack *a, t_stack *b, t_chunk *ch, t_runtime *rt)
 	}
 }
 
-void	medium_sort(t_stack *a, t_stacnormalize_stackk *b, t_runtime *rt)
+void	medium_sort(t_stack *a, t_stack *b, t_runtime *rt)
 {
 	t_chunk	ch;
 	int		n;
